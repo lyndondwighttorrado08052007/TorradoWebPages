@@ -1,0 +1,255 @@
+/* style.css */
+
+/* ===== Body and General Styles ===== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8e7;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    color: #d2691e;
+    margin-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+h3 {
+    color: #d2691e;
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-align: center;
+}
+.menu-links a {
+    display: inline-block;
+    margin: 20px;
+    padding: 15px 25px;
+    background-color: #ffcc99;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.menu-links a:hover {
+    background-color: #ea9139;
+    transform: scale(1.1);
+}
+
+.menu-links a:active{
+    background-color: #f88818;
+    color: white
+}
+/* ===== Table Styles ===== */
+table {
+    margin: 30px auto;
+    border: 0;
+    width: 70%;
+    background-color: #fff3e0;
+    box-shadow: 1px 1px 5px black;
+}
+
+th, td {
+    border: 1px solid #d2691e;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #ffd9b3;
+}
+
+td:hover {
+    background-color: #ffe0b3;
+}
+
+/* ===== Image Styles ===== */
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;         
+    transition: transform 0.3s;
+    border-radius: 50%;
+    border: 5px solid #ffb366;
+    
+}
+
+img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* ===== Text inside table cells ===== */
+td {
+
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #4d2600;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+
+td img {
+    margin-bottom: 5px;
+}
+
+td b {
+    display: block;
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 2px;
+}
+
+td span {
+    display: block;
+    font-weight: normal;
+    font-size: 15px;
+    color: #663300;
+
+}
+td:hover{
+    transform: scale(0.95);
+    cursor: pointer;
+    
+}
+
+
+.back-link {
+    display: inline-block;
+    margin: 15px 0 30px;
+    padding: 8px 20px;
+    background-color: #ffcc99;
+    color: #8b4513;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-link:hover {
+    background-color: #ffb366;
+    transform: scale(1.05);
+    color: #5a2e00;
+}
+
+.back-link:active {
+    background-color: #f38f2b;
+    color: white
+}
+
+.main-menu-img {
+    transition: transform 0.3s;
+}
+
+.main-menu-img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.qty-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    gap: 10px
+    
+}
+
+.qty-btn {
+    width: 40px;
+    font-size: 22px;
+    border: 2px solid #000;
+    background-color: #fff8e7; /* normal button background */
+    cursor: pointer;
+    transition: 
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    }
+
+.qty-radiusleft {
+    border-radius: 5px 0px 0px 5px;
+}
+.qty-radiusright {
+    border-radius: 0px 5px 5px 0px;
+}
+
+.qty {
+  font-size: 18px;
+  font-weight: bold;
+  min-width: 20px;
+  text-align: center;
+}
+
+
+
+.qty-btn:hover {
+  background-color: #ffb366;
+  transform: scale(1.2);
+  color: #fff;
+}
+
+
+.qty-red:hover {
+  background-color: #ff6666;
+}
+
+.qty-green:hover {
+  background-color: #66cc66;
+}
+
+
+
+/*=====button order=======*/
+  button {
+    background-color: #ffcc99;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: black;
+    transition: 
+      background-color 0.3s ease, 
+      transform 0.2s ease,
+      color 0.3s ease;
+    position: relative;
+  }
+
+
+  .qwe, .order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+  }
+
+  button:hover {
+    transform: scale(1.2);
+    background-color: #ffb366;
+  }
+
+  button.cancel-btn:active {
+    transform: scale(1.2);
+    background-color: red;
+    color: white;
+  }
+
+  button.order-btn:active {
+    transform: scale(1.2);
+    background-color: green;
+    color: white;
+  }
+  
