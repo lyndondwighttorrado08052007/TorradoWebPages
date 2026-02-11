@@ -186,6 +186,7 @@ td:hover{
     border-radius: 0px 5px 5px 0px;
 }
 
+
 .qty {
   font-size: 18px;
   font-weight: bold;
@@ -206,8 +207,17 @@ td:hover{
   background-color: #ff6666;
 }
 
+.qty-red:active{
+    background-color: red;
+}
+
 .qty-green:hover {
   background-color: #66cc66;
+}
+
+.qty-green:active{
+    background-color: green;
+
 }
 
 
