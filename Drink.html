@@ -147,7 +147,29 @@
     </div>
     
     
-    
+    <script>
+  // Select all quantity containers
+  const qtyContainers = document.querySelectorAll('.qty-container');
+
+  qtyContainers.forEach(container => {
+    const minusBtn = container.querySelector('.qty-red');
+    const plusBtn = container.querySelector('.qty-green');
+    const qtySpan = container.querySelector('.qty');
+
+    // Decrease
+    minusBtn.addEventListener('click', () => {
+      let current = parseInt(qtySpan.textContent);
+      if (current > 0) qtySpan.textContent = current - 1;
+    });
+
+    // Increase
+    plusBtn.addEventListener('click', () => {
+      let current = parseInt(qtySpan.textContent);
+      qtySpan.textContent = current + 1;
+    });
+  });
+</script>
+
 
 </body>
 </html>
